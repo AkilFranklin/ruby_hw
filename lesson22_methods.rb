@@ -18,14 +18,14 @@ end
 puts "Give me two numbers: "
 first = gets.chomp
 second = gets.chomp
-puts "What do you want to do? 1) Mult 2)Div 3)Sub 4)Mod... Type \'exit' to quit"
+puts "What do you want to do? 1. Mult 2. Div 3. Sub 4. Mod... Type \'exit' to quit"
 choice = 1
 while choice
   
   choice = gets.chomp
 
   if choice.to_i == 1
-    puts "You have chosen Multiplication, the answer is"
+    puts "You have chosen to multiply #{first} with #{second}, the answer is"
     puts multiply(first,second)
   elsif choice.to_i == 2
     puts "You have chosen Division, the answer is"
